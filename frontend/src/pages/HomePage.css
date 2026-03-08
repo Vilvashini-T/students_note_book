@@ -31,15 +31,35 @@
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 650px;
     position: relative;
     z-index: 2;
     text-align: left;
     padding-left: 2rem;
 }
 
+.hero-logo-large {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.1));
+    animation: floatLogo 6s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 800;
     color: #111827;
     letter-spacing: -1px;

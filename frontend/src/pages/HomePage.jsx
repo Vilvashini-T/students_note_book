@@ -75,12 +75,10 @@ const HomePage = () => {
         <div className="homepage" style={{ padding: '0 2rem' }}>
             <section className="hero">
                 <div className="hero-content">
-                    <span style={{ background: 'var(--accent-color)', color: 'white', padding: '0.4rem 1rem', borderRadius: '50px', fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase', marginBottom: '1rem', display: 'inline-block' }}>
-                        New Arrivals 2024
-                    </span>
-                    <h1>Premium Educational Supplies, <span style={{ color: 'var(--primary-color)' }}>Delivered.</span></h1>
-                    <p>Elevate your learning experience with high-quality notebooks, pens, and accessories from Student Note Books, Erode.</p>
-                    <button className="cta-btn">Shop Collection Now</button>
+                    <img src="/images/hero_logo.png" alt="Student Note Books" className="hero-logo-large" />
+                    <h1 style={{ marginTop: '1rem' }}>Your Premium <span style={{ color: 'var(--primary-color)' }}>Academic</span> Store</h1>
+                    <p>Experience the finest high-quality notebooks, custom designs, and professional stationery for every student's journey.</p>
+                    <button className="cta-btn" onClick={() => (window.location.href = '#products')}>Explore Catalog Now</button>
                     <div style={{ marginTop: '2rem', display: 'flex', gap: '2rem', color: '#4b5563', fontSize: '0.9rem', fontWeight: 600 }}>
                         <span>🚚 Free Shipping</span>
                         <span>⚡ Rapid Delivery</span>
