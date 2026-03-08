@@ -32,7 +32,7 @@ const Navbar = () => {
         <header className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-brand">
-                    <span className="brand-highlight">Student</span> Note Books
+                    <img src="/navbar_logo.png" alt="Student Note Books" className="navbar-logo" />
                 </Link>
 
                 <div className="search-container" style={{ position: 'relative', flex: 0.55 }}>
