@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useStore } from '../Store';
+import CheckoutSteps from '../components/CheckoutSteps';
 import './AuthPages.css';
 
 const PaymentPage = () => {
@@ -24,7 +25,8 @@ const PaymentPage = () => {
     };
 
     return (
-        <div className="auth-container">
+        <div className="auth-container" style={{ flexDirection: 'column' }}>
+            <CheckoutSteps step1 step2 step3 />
             <div className="auth-card">
                 <h2>Payment Method</h2>
                 <form onSubmit={submitHandler}>

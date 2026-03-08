@@ -10,7 +10,7 @@ const Navbar = () => {
     const { cart, userLogin } = state;
     const [keyword, setKeyword] = useState('');
     const [showSuggestions, setShowSuggestions] = useState(false);
-    const [suggestions] = useState(['Notebooks', 'Ballpoint Pens', 'Geometry Box', 'Sketch Pens', 'Erasers']);
+    const [suggestions] = useState(['Long Size Notebook', 'Unruled King Size', '172 Pages Notebook', 'Drawing Book', 'Graph Note']);
     const navigate = useNavigate();
 
     const submitHandler = (e) => {

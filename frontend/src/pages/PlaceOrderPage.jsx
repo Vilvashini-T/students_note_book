@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useStore } from '../Store';
 import axios from 'axios';
+import CheckoutSteps from '../components/CheckoutSteps';
 import './CartPage.css'; // Reusing layout CSS
 
 const PlaceOrderPage = () => {
@@ -119,7 +120,8 @@ const PlaceOrderPage = () => {
     };
 
     return (
-        <div className="cart-page-container">
+        <div className="cart-page-container" style={{ paddingTop: '1rem' }}>
+            <CheckoutSteps step1 step2 step3 step4 />
             <h1 className="cart-title">Order Summary</h1>
 
             <div className="cart-content-grid">
