@@ -22,20 +22,16 @@
 }
 
 .navbar-logo {
-  height: 52px;
-  /* Sleek size for the top bar */
+  height: 80px;
+  /* larger logo */
   width: auto;
-  background-color: #ffffff;
-  padding: 6px 16px;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  /* No background, padding, or border radius – keep PNG transparency */
   object-fit: contain;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .navbar-logo:hover {
-  transform: scale(1.06) rotate(-1deg);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 
 .navbar-search {
